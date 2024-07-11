@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Player</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;e
-            padding: 0;
-        }
-        
-        iframe {
-            display: block;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Disable
+function disableselect(e){
+return false
+}
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H018K51RR8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+function reEnable(){
+return true
+}
 
-  gtag('config', 'G-H018K51RR8');
-</script>
-
-
+//if IE4+
+document.onselectstart=new Function ("return false")
+document.oncontextmenu=new Function ("return false")
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+//-->
+</script>    
+<title>Gloobinho - Ao Vivo</title>
+<style>
+{
+background-color: #000000
+}
+</style>
 </head>
 <body>
-<iframe width="100%" height="100%" src="https://reidoscanais.eu/embed/player.php?l=aHR0cHM6Ly93dzEubXktY2RuLmZ1dGJvbC9kcm0vd3RjLmh0bWw%2FaWQ9MTU4NQ%3D%3D"  allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
+<h1 style="text-align:center"><span style="color:#FFFFFF">Assistir Gloobinho - Online - 24 Horas - Ao Vivo</span></h1>    
+<iframe width="100%" height="100%" src="https://reidoscanais.eu/embed/?id=gloobinho"  allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe>
+</body>
+</html>
