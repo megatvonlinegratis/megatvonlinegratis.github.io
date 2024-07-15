@@ -35,7 +35,6 @@ background-color: #000000
 <button id="player2Button" class="player-button" onclick="showPlayer('player2')"><span style="color:#000000"><b>Player 2</b></span></button>
 <button id="player3Button" class="player-button" onclick="showPlayer('player3')"><span style="color:#000000"><b>Player 3</b></span></button>
 <button id="player4Button" class="player-button" onclick="showPlayer('player4')"><span style="color:#000000"><b>Player 4</b></span></button>
-<button id="player5Button" class="player-button" onclick="showPlayer('player5')"><span style="color:#000000"><b>Player 5</b></span></button>        
 <div id="player" class="player-container">
 </div>
 </section>  
@@ -47,7 +46,7 @@ showPlayer('player1');
 function showPlayer(playerId) {
 var playerIframe;
 if (playerId === 'player1') {
-playerIframe = '<iframe loading="lazy" src="https://reidoscanais.eu/embed/?id=cartoonetwork" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+playerIframe = '<iframe loading="lazy" src="https://reidoscanais.eu/embed/?id=cartoonnetwork" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
 document.getElementById('player1Button').classList.add('active'); // Adicionando a classe "active" ao botão player1
 document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
 } else if (playerId === 'player2') {
@@ -60,17 +59,11 @@ document.getElementById('player3Button').classList.add('active'); // Adicionando
 document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
 document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1
 } else if (playerId === 'player4') {
-playerIframe = '<iframe loading="lazy" src="canais-2/player.html?id=cartoon-network" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+playerIframe = '<iframe loading="lazy" src="/canais-2/player.html?id=cartoon-network" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
 document.getElementById('player4Button').classList.add('active'); // Adicionando a classe "active" ao botão player4
 document.getElementById('player3Button').classList.remove('active'); // Removendo a classe "active" do botão player3
 document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
 document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1
-playerIframe = '<iframe loading="lazy" src="canais-3/player.html?id=cartoon-network" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
-document.getElementById('player5Button').classList.add('active'); // Adicionando a classe "active" ao botão player5
-document.getElementById('player5Button').classList.add('active'); // Adicionando a classe "active" ao botão player4
-document.getElementById('player3Button').classList.remove('active'); // Removendo a classe "active" do botão player3
-document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
-document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1        
 }
         
 document.getElementById('player').innerHTML = playerIframe;
