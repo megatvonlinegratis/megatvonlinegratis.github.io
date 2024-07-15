@@ -31,8 +31,8 @@ background-color: #000000
 <body>
 <h1 style="text-align:center"><span style="color:#FFFFFF">Assistir Gloobinho - Online - 24 Horas - Ao Vivo</span></h1>
 <section id="pages" class=" pages">
-<button id="player1Button" class="player-button active" onclick="showPlayer('player1')">Player 1</button>
-<button id="player2Button" class="player-button" onclick="showPlayer('player2')">Player 2</button>
+<button id="player1Button" class="player-button active" onclick="showPlayer('player1')"><span style="color:#000000"><h1><b>Player 1</b></h1></span></button>
+<button id="player2Button" class="player-button" onclick="showPlayer('player2')"><span style="color:#000000"><h1><b>Player 2</b></h1></span></button>
 <div id="player" class="player-container">
 </div>
 </section>  
@@ -48,7 +48,7 @@ playerIframe = '<iframe loading="lazy" src="https://reidoscanais.eu/embed/?id=gl
 document.getElementById('player1Button').classList.add('active'); // Adicionando a classe "active" ao botão player1
 document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
 } else if (playerId === 'player2') {
-playerIframe = '<iframe loading="lazy" src="https://meuplayeronlinehd.com/myplay/watch.html?id=cartoon" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+playerIframe = '<iframe loading="lazy" src="https://embedmax.site/tvl/gloobinho.php" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
 document.getElementById('player2Button').classList.add('active'); // Adicionando a classe "active" ao botão player2
 document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1
 }
