@@ -1,57 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-<script src="/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
-<SCRIPT LANGUAGE="JavaScript">
-<!-- Disable
-function disableselect(e){
-return false
-}
-
-function reEnable(){
-return true
-}
-
-//if IE4+
-document.onselectstart=new Function ("return false")
-document.oncontextmenu=new Function ("return false")
-//if NS6
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-//-->
-</script>
-<title>Globo SP - Ao Vivo</title>
-<style>
-body {
-background-color: #000000
-}
-</style>
-</head>
-<body>
-<div id="player"></div>
-<script>
-      var player = new Clappr.Player({
-        source: 'https://cdn-1.nxplay.com.br/GLOBO_SP_TK/tracks-v1a1/mono.m3u8',
-        width: '100%',
-        height: '550',
-        plugins: [ChromecastPlugin],
-        parentId: '#player',
-        chromecast: {
-          appId: '9DFB77C0',
-          contentType: 'video/mp4',
-          media: {
-            type: ChromecastPlugin.Movie,
-            title: 'Awesome Hot Air Balloon Slackline',
-            subtitle: 'You won\'t get much closer to Skylining than this!'
-          },
-          customData: {
-            licenseURL: 'http://widevine/yourLicenseServer'
-          }
-        }
-      });
-</script>
-</body>
-</html>
+#video {position:fixed; z-index:0; height:100%;width:100%; padding:0; margin:0;}}
+.overlay a{ list-style-type:none; text-decoration:none;}
+.overlay h1 {position: fixed; top:0px; left:10%; z-index: 1;
+font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 701; color: #0FFF00;}</style><style>#player{width:100%;height:100%;position:fixed;top:0;right:0;left:0}</style><p><script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js" type="text/javascript"></script><br /> <script src="https://cdn.jsdelivr.net/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script><br /></head><body></p><div id="player"></div><p><script>function get(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?$]"+e+"=([^$#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"https://cdn-4.nxplay.com.br/CARTOON_NETWORK_TK/index.m3u8":unescape(c[1])}
+var link=get("src");
+var player = new Clappr.Player(
+{source:link,
+poster: "",autoPlay:true,height:"100%",
+width:"100%",parentId: "#player",mediacontrol: {seekbar: "#005da9", buttons: "#fff"},
+});</script></p><div class="overlay">
