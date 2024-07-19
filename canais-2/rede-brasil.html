@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+#video {position:fixed; z-index:0; height:100%;width:100%; padding:0; margin:0;}}
+.overlay a{ list-style-type:none; text-decoration:none;}
+.overlay h1 {position: fixed; top:0px; left:10%; z-index: 1;
+font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 701; color: #0FFF00;}</style>
+<style>#player{width:100%;height:100%;position:fixed;top:0;right:0;left:0}</style>
+<p><script src="/clappr/latest/clappr.min.js" type="text/javascript"></script><br />
+<script src="/clappr.level-selector/latest/level-selector.min.js" type="text/javascript"></script><br />
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Disable
+function disableselect(e){
+return false
+}
+
+function reEnable(){
+return true
+}
+
+//if IE4+
+document.onselectstart=new Function ("return false")
+document.oncontextmenu=new Function ("return false")
+//if NS6
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+//-->
+</script>
+<title>Rede Brasil - Ao Vivo</title>
+<style>
+body {
+background-color: #000000
+}
+</style>      
+</head>
+<body></p>
+<div id="player"></div><p><script>function get(e){e=e.replace(/[\[]/,"\\[").replace(/[\]]/,"\\]");
+var n="[\\?$]"+e+"=([^$#]*)",
+l=new RegExp(n),
+c=l.exec(window.location.href);
+return null==c?"https://stream.ads.ottera.tv/playlist.m3u8?network_id=4582":unescape(c[1])}
+var link=get("src");
+var player = new Clappr.Player(
+{source:link,
+poster: "",autoPlay:true,height:"100%",
+width:"100%",parentId: "#player",mediacontrol: {seekbar: "#005da9", buttons: "#fff"},
+});</script></p><div class="overlay">
+</a></div>
+</body>
+</html>
