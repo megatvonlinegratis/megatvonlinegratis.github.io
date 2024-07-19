@@ -27,7 +27,7 @@ document.onclick=reEnable
 }
 //-->
 </script>
-<title>SBT - Ao Vivo</title>
+<title>Band - Ao Vivo</title>
 <style>
 body {
 background-color: #000000
@@ -39,7 +39,7 @@ background-color: #000000
 var n="[\\?$]"+e+"=([^$#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"https://d2dxmktgc9qcf7.cloudfront.net/out/v1/a7c2cd7ccd84420aa496b5d4cfd9ae79/hlsOutput_5.m3u8":unescape(c[1])}
+return null==c?"https://cdn-1.nxplay.com.br/BAND_HD_PFZ/tracks-v1a1/mono.m3u8":unescape(c[1])}
 var link=get("src");
 var player = new Clappr.Player(
 {source:link,
