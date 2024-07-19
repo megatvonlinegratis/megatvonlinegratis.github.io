@@ -39,7 +39,7 @@ background-color: #000000
 var n="[\\?$]"+e+"=([^$#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"https://stream.ads.ottera.tv/playlist.m3u8?network_id=4582":unescape(c[1])}
+return null==c?"http://brsupertv.brsuper.com.br:9080/hls/brsupertv.m3u8":unescape(c[1])}
 var link=get("src");
 var player = new Clappr.Player(
 {source:link,
