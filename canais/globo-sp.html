@@ -21,7 +21,7 @@ document.onclick=reEnable
 }
 //-->
 </script>
-<title>Globo SP - Ao Vivo</title>
+<title>Globo RJ - Ao Vivo</title>
 <style>
 body {
 background-color: #000000
@@ -29,7 +29,7 @@ background-color: #000000
 </style>
 </head>
 <body>
-<h1 style="text-align:center"><span style="color:#FFFFFF">Assistir Globo SP - Online - 24 Horas - Ao Vivo</span></h1>
+<h1 style="text-align:center"><span style="color:#FFFFFF">Assistir Globo RJ - Online - 24 Horas - Ao Vivo</span></h1>
 <section id="pages" class=" pages">
 <button id="player1Button" class="player-button active" onclick="showPlayer('player1')" style="color: blue"><b>PLAYER 1</b></button>
 <button id="player2Button" class="player-button" onclick="showPlayer('player2')" style="color: blue"><b>PLAYER 2</b></button>
@@ -66,7 +66,8 @@ document.getElementById('player4Button').classList.add('active'); // Adicionando
 document.getElementById('player3Button').classList.remove('active'); // Removendo a classe "active" do botão player3
 document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
 document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1
-playerIframe = '<iframe loading="lazy" src="/canais-2/player.html?id=globo-sp" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
+} else if (playerId === 'player5') {
+playerIframe = '<iframe loading="lazy" src="https://megatvonlinegratis.github.io/canais-2/player.html?id=globo-sp" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
 document.getElementById('player5Button').classList.add('active'); // Adicionando a classe "active" ao botão player5
 document.getElementById('player4Button').classList.remove('active'); // Removendo a classe "active" do botão player4
 document.getElementById('player3Button').classList.remove('active'); // Removendo a classe "active" do botão player3
