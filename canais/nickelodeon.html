@@ -34,7 +34,6 @@ background-color: #000000
 <button id="player1Button" class="player-button active" onclick="showPlayer('player1')" style="color: blue"><b>PLAYER 1</b></button>
 <button id="player2Button" class="player-button" onclick="showPlayer('player2')" style="color: blue"><b>PLAYER 2</b></button>
 <button id="player3Button" class="player-button" onclick="showPlayer('player3')" style="color: blue"><b>PLAYER 3</b></button>
-<button id="player4Button" class="player-button" onclick="showPlayer('player4')" style="color: blue"><b>PLAYER 4</b></button>
 <div id="player" class="player-container">
 
 </div>
@@ -57,12 +56,6 @@ document.getElementById('player1Button').classList.remove('active'); // Removend
 } else if (playerId === 'player3') {
 playerIframe = '<iframe loading="lazy" src="https://embedmax.site/tvl/nickelodeon2.php" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
 document.getElementById('player3Button').classList.add('active'); // Adicionando a classe "active" ao botão player3
-document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
-document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1
-} else if (playerId === 'player4') {
-playerIframe = '<iframe loading="lazy" src="https://meuplayeronlinehd.com/myplay/watch.html?id=nick" width="100%" height="550" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>';
-document.getElementById('player4Button').classList.add('active'); // Adicionando a classe "active" ao botão player4
-document.getElementById('player3Button').classList.remove('active'); // Removendo a classe "active" do botão player3
 document.getElementById('player2Button').classList.remove('active'); // Removendo a classe "active" do botão player2
 document.getElementById('player1Button').classList.remove('active'); // Removendo a classe "active" do botão player1
 }
