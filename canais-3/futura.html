@@ -40,7 +40,7 @@ background-color: #000000
 var n="[\\?$]"+e+"=([^$#]*)",
 l=new RegExp(n),
 c=l.exec(window.location.href);
-return null==c?"http://cdn2.connectbr.com.br/Futura/tracks-v1a1/mono.m3u8":unescape(c[1])}
+return null==c?"http://cdn2.connectbr.com.br/Futura/playlist.m3u8":unescape(c[1])}
 var link=get("src");
 var player = new Clappr.Player(
 {source:link,
