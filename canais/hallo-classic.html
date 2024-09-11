@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script src="/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
 <SCRIPT LANGUAGE="JavaScript">
 <!-- Disable
 function disableselect(e){
@@ -29,7 +31,28 @@ background-color: #000000
 </style>
 </head>
 <body>
-<h1 style="text-align:center"><span style="color:#FFFFFF">Assistir Hallo! Classic - Online - 24 Horas - Ao Vivo</span></h1>
-<iframe width="100%" height="600" class="frameboxlive" src="https://embedcanaistv.com/halloclassic" name="Player" scrolling="no" border="0" marginwidth="0" marginheight="0" allowfullscreen="true" frameborder="0"></iframe>
+<h1 style="text-align:center"><span style="color:#fff">Assistir Classic! Anime - Online - 24 Horas - Ao Vivo</span></h1>
+<div id="player"></div>
+<script>
+var player = new Clappr.Player({
+source: 'https://cdn-5.nxplay.com.br/HALLOCLASSIC/tracks-v1a1/mono.m3u8',
+width: '100%',
+height: '600',
+plugins: [ChromecastPlugin],autoPlay:true, 
+parentId: '#player',mediacontrol: {seekbar: "#005da9", buttons: "#fff"},
+chromecast: {
+appId: '9DFB77C0',
+contentType: 'video/mp4',
+media: {
+type: ChromecastPlugin.Movie,
+title: 'Awesome Hot Air Balloon Slackline',
+subtitle: 'You won\'t get much closer to Skylining than this!'
+},
+customData: {
+licenseURL: ''
+}
+}
+});
+</script>
 </body>
 </html>
